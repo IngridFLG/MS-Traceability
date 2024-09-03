@@ -1,0 +1,19 @@
+# Conversion to YAML from Properties format
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+server:
+  port: 8060
+
+spring:
+  application:
+    name: MS-Trazabilidad
+
+  data:
+    mongodb:
+      uri: mongodb://admin:1234@localhost:27017/ms_trazabilidad?authSource=admin
+
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
